@@ -140,3 +140,51 @@ LinuxCopy
 参考： 最稳的上网方式：v2ray+ws+tls一键脚本
 以上两种方法各有优缺点，我选择的是第一种。
 3. 这两种方法都适合在极端网络环境下使用，速度较慢，基本上就是满足看看图片和文字了。
+
+如果你觉得速度不够快可以使用BBR 加速器
+首先确认命令符框最前面是不是root@xxxxx
+如果不是请输入 sudo-i
+然后输入以下代码
+先是这个 安装wget GCP服务器不需要安
+
+yum -y install wget
+
+然后是这个
+
+wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
+
+23
+
+⬆️这里选2 同学们 安装BBR plus
+24
+
+⬆️如果出现这个 这里按键盘的TAB切换到NO
+25
+
+⬆️安装完以后 先选Y重启
+27
+
+⬆️Y回车以后等待一会 然后再按一下回车键 选择重新连接
+
+28
+
+⬆️输入 `sudo -i`
+29
+
+⬆️再复制一下这段代码
+wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
+
+30
+
+⬆️这一次选 7 使用BBR plus 加速
+31
+
+⬆️看到这个图就OK
+32
+
+⬆️也可以再输入在段代码 查看 一下
+wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
+
+33
+
+⬆️看到这个以后鼠标点击左上角（MAC）或者右上角(pc)的X关闭窗口....han.... 至此 结束
