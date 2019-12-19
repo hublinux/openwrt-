@@ -30,7 +30,9 @@ nslookup www.baidu.com 192.168.1.1
 root 账号
 
 sudo -i
+
 bash <(curl -s -L https://git.io/v2ray.sh)
+
 LinuxCopy
 如果提示 curl: command not found
 请安装 Curl
