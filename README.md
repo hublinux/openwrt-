@@ -23,3 +23,8 @@ nslookup www.baidu.com 192.168.1.1
 复制代码
 检查是否生效192.168.1.1改为你的lede地址，如果多次检查只有一个IP地址，则为生效，非常简单
 2019.4.4 测试https失败，tls服务器只能填IP（不能填域名）
+
+秋水的一件代码
+wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh
+chmod +x shadowsocks-all.sh
+./shadowsocks-all.sh 2>&1 | tee shadowsocks-all.log
