@@ -24,7 +24,16 @@ nslookup www.baidu.com 192.168.1.1
 检查是否生效192.168.1.1改为你的lede地址，如果多次检查只有一个IP地址，则为生效，非常简单
 2019.4.4 测试https失败，tls服务器只能填IP（不能填域名）
 
-秋水的一件代码
-wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh
-chmod +x shadowsocks-all.sh
-./shadowsocks-all.sh 2>&1 | tee shadowsocks-all.log
+
+
+推荐的一键安装脚本：
+root 账号
+
+sudo -i
+bash <(curl -s -L https://git.io/v2ray.sh)
+LinuxCopy
+如果提示 curl: command not found
+请安装 Curl
+ubuntu/debian 系统安装 Curl 方法: apt-get update -y && apt-get install curl -y
+centos 系统安装 Curl 方法: yum update -y && yum install curl -y
+协议很多，可以搜索了解下，也可以直接用默认的。有的需要有域名（websocket tls），有的就不用（tcp，mkcp）
